@@ -1,4 +1,5 @@
 include(libraries/curl)
+include(libraries/discord)
 include(libraries/freetype)
 include(libraries/jpeg)
 include(libraries/ogg)

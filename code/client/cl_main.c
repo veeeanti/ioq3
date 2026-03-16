@@ -2963,6 +2963,8 @@ CL_Frame
 */
 void CL_Frame ( int msec ) {
 
+	CL_DiscordFrame ();
+
 	if ( !com_cl_running->integer ) {
 		return;
 	}
@@ -3543,6 +3545,8 @@ void CL_Init( void ) {
 
 	Con_Init ();
 
+	CL_InitDiscord ();
+
 	if(!com_fullyInitialized)
 	{
 		CL_ClearState();
@@ -3815,6 +3819,7 @@ void CL_Shutdown(char *finalmsg, qboolean disconnect, qboolean quit)
 	Cmd_RemoveCommand ("video");
 	Cmd_RemoveCommand ("stopvideo");
 
+	CL_ShutdownDiscord ();
 	CL_ShutdownInput();
 	Con_Shutdown();
 

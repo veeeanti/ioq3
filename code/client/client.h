@@ -641,3 +641,10 @@ qboolean CL_VideoRecording( void );
 //
 void CL_WriteDemoMessage ( msg_t *msg, int headerBytes );
 
+//
+// cl_discord.c
+//
+void CL_InitDiscord(void);
+void CL_ShutdownDiscord(void);
+void CL_DiscordFrame(void);
+
