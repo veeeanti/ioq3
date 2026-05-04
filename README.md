@@ -1,3 +1,9 @@
+__A note from me and what this is.__
+
+All this is here is the standard ioquake3 code with Discord RPC implemented to get it to appear as the correct title when playing. This severely bugged me so I did something about it. The same way I did with Half-Life and Blue Shift in my fork of GoldSrc. In fact, it works the exact same way! That's all, thank you byeeee :3
+
+=======
+
 ![Build](https://github.com/ioquake/ioq3/workflows/Build/badge.svg)
 
                    ,---------------------------------------.
